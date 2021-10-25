@@ -1,11 +1,10 @@
 import './app.css';
-import Habit from './habit';
-
+import Habits from './habits';
 import React, { Component } from 'react';
 
 class App extends Component {
   render() {
-    return <Habit />;
+    return <Habits />;
   }
 }
 
