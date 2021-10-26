@@ -1,8 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 ul {
+  padding-left: 0;
+}
+ul {
+  margin: 0;
   padding-left: 0;
 }
 li {
   list-style: none;
+  padding: 0;
 }
 button {
   background-color: transparent;
@@ -10,23 +19,42 @@ button {
   outline: none;
   cursor: pointer;
 }
-.habits {
-  padding-left: 0.5em;
+
+.navbar {
+  background-color: skyblue;
+  font-size: 2rem;
+  padding: 0.5em 0;
+}
+.navbar-icon {
+  color: lightgrey;
+  margin: 0 0.5em;
+}
+.navbar-title {
+  margin-right: 0.5em;
+}
+.navbar-totalCount {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  text-align: center;
+  line-height: 1em;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(35, 133, 128);
 }
 .habit {
-  background-color: skyblue;
-  padding: 1em 0;
+  background-color: powderblue;
+  padding: 2em 0;
   padding-left: 0.5em;
 }
 .habit-name {
-  color: white;
   font-size: 2rem;
 }
 .habit-count {
   color: white;
   font-size: 1.5rem;
   margin-left: 0.5em;
-  background-color: darkblue;
+  background-color: lightseagreen;
   display: inline-block;
   width: 1.2em;
   height: 1.2em;

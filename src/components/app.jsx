@@ -1,6 +1,7 @@
 import './app.css';
 import Habits from './habits';
 import React, { Component } from 'react';
+import Navbar from './navbar';
 
 class App extends Component {
   state = {
@@ -55,12 +56,19 @@ class App extends Component {
 
   render() {
     return (
-      <Habits
-        habits={this.state.habits}
-        onIncrease={this.handleIncrease}
-        onDecrease={this.handleDecrease}
-        onDelete={this.handleDelete}
-      />
+      <>
+        <Navbar
+          totalCount={
+            this.state.habits.filter((habit) => habit.count !== 0).length
+          }
+        />
+        <Habits
+          habits={this.state.habits}
+          onIncrease={this.handleIncrease}
+          onDecrease={this.handleDecrease}
+          onDelete={this.handleDelete}
+        />
+      </>
     );
   }
 }
