@@ -20,16 +20,16 @@ class Habit extends Component {
             className='button button-increase'
             onClick={this.handleIncrease}
           >
-            <i class='far fa-plus-square'></i>
+            <i className='far fa-plus-square'></i>
           </button>
           <button
             className='button button-decrease'
             onClick={this.handleDecrease}
           >
-            <i class='far fa-minus-square'></i>
+            <i className='far fa-minus-square'></i>
           </button>
           <button className='button button-delete' onClick={this.handleDelete}>
-            <i class='far fa-trash-alt'></i>
+            <i className='far fa-trash-alt'></i>
           </button>
         </li>
       </>

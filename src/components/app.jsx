@@ -59,6 +59,13 @@ class App extends Component {
       habits: newHabits,
     }));
   };
+  handleAdd = (text) => {
+    const newHabits = [
+      ...this.state.habits,
+      { id: Math.random(), name: text, count: 0 },
+    ];
+    this.setState((state) => ({ habits: newHabits }));
+  };
 
   render() {
     return (
@@ -74,6 +81,7 @@ class App extends Component {
           onDecrease={this.handleDecrease}
           onDelete={this.handleDelete}
           onReset={this.handleReset}
+          onAdd={this.handleAdd}
         />
       </>
     );
