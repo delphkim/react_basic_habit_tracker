@@ -42,8 +42,8 @@ button {
   color: white;
   background-color: rgb(35, 133, 128);
 }
+
 .habit {
-  background-color: powderblue;
   padding: 2em 0;
   padding-left: 0.5em;
 }
@@ -77,4 +77,13 @@ button {
 }
 .button-delete {
   color: grey;
+}
+.button-reset {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  font-size: 1.1rem;
+  color: white;
+  width: 6em;
+  height: 2.5em;
+  background-color: rgb(35, 133, 128);
 }
